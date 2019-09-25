@@ -17,3 +17,8 @@ script:
   - coverage run manage.py test
 after_success:
   - coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: 75e8f4ce-39b3-4c72-8064-216c1cd82bdf
+  app: tdd-tutorial-heroku-app
